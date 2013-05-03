@@ -1,0 +1,106 @@
+<!-- XML files describe the layout of the interface of each activity -->
+<!-- All the statements listed below each Button, Text, etc. describes its appearance and can be customized -->
+<!-- Each item on the XML are referenced to its corresponding Java file via its id -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_credits_1_edited_bw" >
+
+    <TextView
+        android:id="@+id/Jean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Kumi"
+        android:layout_alignParentRight="true"
+        android:padding="5dip"
+        android:text="Jean Kalkavage"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00ffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Gau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Jean"
+        android:layout_alignParentRight="true"
+        android:padding="5dip"
+        android:text="Gaukhar Tergemessova"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffa500"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Amanda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Gau"
+        android:layout_alignParentRight="true"
+        android:padding="5dip"
+        android:text="Amanda Brief"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff00ff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Minnie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Team"
+        android:layout_marginTop="161dp"
+        android:padding="5dip"
+        android:text="Minnie Kim"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#00ff00"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Kumi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Minnie"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="31dp"
+        android:padding="5dip"
+        android:text="Kumiszhan Dybyspayeva"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffff00"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Team MAGJiK Developers"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="15sp"
+        android:text="EC327 Group Project Spring 2013"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:background="@null"
+        android:text="Main Menu"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

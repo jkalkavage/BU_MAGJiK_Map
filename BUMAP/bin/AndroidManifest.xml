@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bumap"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- must give permission for all activities in the manifest! -->
+    <!-- properties of our application -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+    <!-- permission to start MainActivity  -->
+        <activity
+            android:name="com.example.bumap.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    	<!-- permission to start Search activity  -->
+        <activity android:name="com.example.bumap.Search" 
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- permission to start Map activity -->
+        <!-- forced screen layout to be landscape in order to provide user with best quality image -->
+        <activity android:name="com.example.bumap.Map"
+             android:screenOrientation="landscape" >
+        </activity>
+       
+        <!-- permission to start DisplaySearchResults activity -->
+        <!-- forced screen to be portrait to ensure best quality view for users -->
+        <activity
+            android:name="com.example.bumap.DisplaySearchResults"
+            android:label="@string/title_activity_display_search_results"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.bumap.Search" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.bumap.Search" />
+        </activity>
+       
+        <!-- permission to start Bitmap activity -->
+        <!-- forced screen to be landscrape to ensure best quality view for users -->
+        <activity  
+            android:name="com.example.bumap.Bitmap"
+            android:screenOrientation="landscape" >
+            </activity>
+          
+        <!-- permission to start Game activity -->
+        <activity 
+            android:name="com.example.bumap.Game" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- permission to start DisplayGameMap -->
+        <activity
+            android:name="com.example.bumap.DisplayGameMap"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+    	<!-- permission to start Lose activity -->
+    	<activity
+    	    android:name="com.example.bumap.Lose"
+    	    android:screenOrientation="portrait" >
+    	</activity>
+    	
+    <!-- permission to start Win activity -->
+    <activity 
+        android:name="com.example.bumap.Win" 
+        android:screenOrientation="portrait">
+    </activity>
+            
+    <!-- permission to start Credits activity -->
+    <activity
+        android:name="com.example.bumap.Credits" >
+    </activity>
+       
+    </application>
+
+</manifest>

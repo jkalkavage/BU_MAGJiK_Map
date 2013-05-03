@@ -1,0 +1,85 @@
+<!-- XML files describe the layout of the interface of each activity -->
+<!-- All the statements below list each Button, Text, etc. and describes its appearance and can be customized -->
+<!-- Each item on the XML are referenced to its corresponding Java file via its id -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:background="@drawable/background_main_4_edited"
+    tools:context=".MainActivity" >
+    
+    <!-- android:background="@null" makes the default rectangular button's background fill transparent -->
+        <Button
+            android:id="@+id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/button_credits"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:background="@null" 
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/search"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="@string/button_view_map"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/credits"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="@string/button_game"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/blocklogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:src="@drawable/bu_block_logo" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/game"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="@string/button_search"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/blocklogo"
+            android:layout_marginTop="67dp"
+            android:text="BU MAGJiK MAP"
+            android:textColor="#ffffff"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+</RelativeLayout>

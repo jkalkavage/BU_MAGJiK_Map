@@ -1,0 +1,94 @@
+<!-- XML files describe the layout of the interface of each activity -->
+<!-- All the statements listed below each Button, Text, etc. describes its appearance and can be customized -->
+<!-- Each item on the XML are referenced to its corresponding Java file via its id -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DisplayGameMap" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scroll to find the red dot and guess the building code!" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_final" />
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignRight="@+id/horizontalScrollView1"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/horizontalScrollView1"
+        android:layout_below="@+id/horizontalScrollView1"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/buttonMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="buttonMain"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonMain"
+        android:layout_alignRight="@+id/buttonMain"
+        android:onClick="buttonNext"
+        android:text="Next Question"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <LinearLayout android:layout_width="fill_parent"
+                  android:id="@+id/search_results_layout"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+        <!-- Put all your application views here, such as buttons, textviews, edittexts and so on -->
+<TextView 
+android:id="@+id/searchResults"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="top"
+android:textIsSelectable ="true"
+android:scrollHorizontally="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:id="@+id/search_button_layout"
+                  android:layout_height="wrap_content"
+                  android:gravity="bottom"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignBottom="@+id/search_results_layout">
+
+<Button
+    android:id="@+id/searchMap"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:textStyle="bold"
+    android:layout_weight="0.70"
+    android:textColor="#ffffff"
+    android:text="Go To Map" />
+
+    </LinearLayout>
+</RelativeLayout>

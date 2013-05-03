@@ -1,0 +1,44 @@
+<!-- XML files describe the layout of the interface of each activity -->
+<!-- All the statements listed below each Button, Text, etc. describes its appearance and can be customized -->
+<!-- Each item on the XML are referenced to its corresponding Java file via its id -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:background="@drawable/background_search_2"	>
+
+   		<Button
+   		    android:id="@+id/back"
+   		    android:layout_width="115dp"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentBottom="true"
+   		    android:layout_alignParentLeft="true"
+   		    android:layout_alignParentRight="true"
+   		    android:background="#696969"
+   		    android:text="Back"
+   		    android:textColor="#ffffff" />
+
+   		<EditText
+   		    android:id="@+id/editText1"
+   		    android:layout_width="258dp"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentTop="true"
+   		    android:layout_marginRight="14dp"
+   		    android:layout_toLeftOf="@+id/search"
+   		    android:ems="10"
+   		    android:hint="@string/edit_message" />
+
+   		<ImageButton
+   		    android:id="@+id/search"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="66dp"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_alignParentTop="true"
+   		    android:layout_marginRight="14dp"
+   		    android:background="@null"
+   		    android:src="@drawable/search_icon" />
+
+	</RelativeLayout>
+    
